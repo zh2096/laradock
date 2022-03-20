@@ -18,3 +18,8 @@ docker image prune -a
 
 docker cp <localfile>  <container>:<path>
 docekr restart <container>
+
+##ubantu install gdb
+apt-get update
+apt-get install gdb
+
