@@ -5,7 +5,7 @@ docker-compose logs -f {container-name}
 
 docker-compose down
 docker-compose build --no-cache {container-name}
-docker-compose up -d nginx mysql
+docker-compose up -d nginx mysql redis
 
 ## nginx mount: (inspect)
 # site_config: ./laradock/nginx/sites => /etc/nginx/sites-available
@@ -22,4 +22,8 @@ docekr restart <container>
 ##ubantu install gdb
 apt-get update
 apt-get install gdb
+
+##container ip
+docker inspect <contianer> |grep IP
+
 
