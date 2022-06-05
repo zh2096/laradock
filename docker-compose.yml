@@ -292,6 +292,7 @@ services:
         - docker-in-docker:/certs/client
       ports:
         - "${PHP_FPM_XDEBUG_PORT}:9003"
+        - "8012:8012" #wowt1-laravel-websockets
       expose:
         - "9000"
       extra_hosts:

@@ -26,4 +26,11 @@ apt-get install gdb
 ##container ip
 docker inspect <contianer> |grep IP
 
+##redis contianer启动失败可能是因其redis服务绑定了不存在的网卡ip
 
+
+##docker network
+#查看连到network的container
+docker network inspect <network>
+#往network添加/删除container
+docker network connect/disconnect <network> <container>
