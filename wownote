@@ -34,3 +34,6 @@ docker inspect <contianer> |grep IP
 docker network inspect <network>
 #往network添加/删除container
 docker network connect/disconnect <network> <container>
+
+##composer create-project创建项目报错
+export COMPOSER_AUTH=
