@@ -6,6 +6,7 @@ docker-compose logs -f {container-name}
 docker-compose down
 docker-compose build --no-cache {container-name}
 docker-compose up -d nginx mysql redis mongo
+// this image is not in the allowlist.  尝试docker pull单个
 
 ## nginx mount: (inspect)
 # site_config: ./laradock/nginx/sites => /etc/nginx/sites-available
@@ -37,3 +38,5 @@ docker network connect/disconnect <network> <container>
 
 ##composer create-project创建项目报错
 export COMPOSER_AUTH=
+
+## 容器的外部数据保存在"~/.laradock/data",如mysql的数据文件，如果忘记mysql密码可以清空"~/.laradock/data/mysql"
