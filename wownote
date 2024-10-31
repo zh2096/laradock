@@ -11,6 +11,7 @@ docker-compose up -d nginx mysql redis mongo
 ## nginx mount: (inspect)
 # site_config: ./laradock/nginx/sites => /etc/nginx/sites-available
 # logs: ./laradock/logs/nginx => /var/log/nginx
+docker exec Nginx nginx -V
 docker exec Nginx nginx -t
 docker exec Nginx nginx -s reload
 
